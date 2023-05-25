@@ -1,0 +1,25 @@
+enum TaskStatus { 
+  NEW, 
+  FINISHED
+} 
+
+type Rating @entity {
+  id: ID!
+  score: Int!
+  taskId: String!
+  user: User!
+}
+
+type User @entity {
+  id: ID! # address
+  nickname: String!
+  ratings: [Rating!] @derivedFrom(field: "user")
+}
+
+type Task @entity {
+  id: ID! #taskId
+  status: TaskStatus!
+  details: String!
+  owner: User!
+  resolver: User
+}
