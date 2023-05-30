@@ -3,6 +3,7 @@ Subgraph example for TheGraph protocol. TheGraph is an indexing protocol to quer
 
 ## Table of Contents
 - [Getting started](#getting-started)
+- [Recomendations](#recomendations)
 - [Tips](#tips)
   - [Create new subgraph](#create-new-subgraph)
   - [Graphql Explorer](#ggraphql-explorer)
